@@ -1,0 +1,120 @@
+:root {
+  --bg: #0f172a;
+  --text: white;
+  --card: #1e293b;
+  --accent: #38bdf8;
+}
+
+.light {
+  --bg: #f8fafc;
+  --text: #0f172a;
+  --card: white;
+}
+
+body {
+  margin: 0;
+  font-family: Arial;
+  background: var(--bg);
+  color: var(--text);
+  transition: 0.3s;
+}
+
+/* NAV */
+.nav {
+  display: flex;
+  justify-content: space-between;
+  padding: 15px 40px;
+  position: fixed;
+  width: 100%;
+  background: var(--bg);
+}
+
+.links a {
+  margin: 0 10px;
+  color: var(--text);
+  text-decoration: none;
+}
+
+/* HERO */
+.hero {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 3rem;
+}
+
+/* BUTTONS */
+.buttons a {
+  margin: 10px;
+  padding: 10px 20px;
+  background: var(--accent);
+  color: black;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* SECTIONS */
+.section {
+  padding: 100px 20px;
+  text-align: center;
+}
+
+.dark {
+  background: rgba(255,255,255,0.03);
+}
+
+/* SKILLS */
+.skill {
+  width: 60%;
+  margin: auto;
+}
+
+.bar {
+  background: #334155;
+  height: 8px;
+  border-radius: 10px;
+  margin-bottom: 15px;
+}
+
+.bar div {
+  height: 8px;
+  background: var(--accent);
+}
+
+/* PROJECTS */
+.grid {
+  display: flex;
+  gap: 20px;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.card {
+  background: var(--card);
+  padding: 20px;
+  width: 280px;
+  border-radius: 10px;
+  transition: 0.3s;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+/* ANIMATION */
+.reveal {
+  opacity: 0;
+  transform: translateY(30px);
+  transition: 1s;
+}
+
+.reveal.show {
+  opacity: 1;
+  transform: translateY(0);
+}
