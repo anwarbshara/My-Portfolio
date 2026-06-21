@@ -1,109 +1,123 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Anwar | Portfolio</title>
-<link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Anwar Bshara | CV Portfolio</title>
+  <link rel="stylesheet" href="style.css"/>
 </head>
 
 <body>
 
 <!-- NAV -->
-<nav class="nav">
-  <h2>Anwar</h2>
+<header class="nav">
+  <h2 class="logo">Anwar</h2>
 
   <div class="links">
-    <a href="#home">Home</a>
     <a href="#about">About</a>
     <a href="#skills">Skills</a>
     <a href="#projects">Projects</a>
     <a href="#contact">Contact</a>
-
-    <button onclick="toggleMode()">🌙</button>
   </div>
-</nav>
+</header>
 
 <!-- HERO -->
-<section class="hero" id="home">
-  <h1>Hi, I'm Anwar 👋</h1>
-  <p>Computer Systems Engineer | Software Developer</p>
+<section class="hero">
+  <h1>Anwar Bshara</h1>
+  <p class="role">Computer Systems Engineering Graduate</p>
 
-  <div class="buttons">
-    <a href="#projects">View Work</a>
-    <a href="cv.pdf">Download CV</a>
+  <p class="sub">
+    Flutter Developer • Embedded Systems • Database Systems • Web Technologies
+  </p>
+
+  <div class="hero-actions">
+    <a href="cv.pdf" class="btn" download>Download CV</a>
+    <a href="#projects" class="btn-outline">View Projects</a>
+  </div>
+
+  <div class="socials">
+    <a href="https://github.com/" target="_blank">GitHub</a>
+    <a href="https://linkedin.com/" target="_blank">LinkedIn</a>
   </div>
 </section>
 
 <!-- ABOUT -->
-<section class="section reveal" id="about">
+<section id="about" class="section">
   <h2>About Me</h2>
   <p>
-    Computer Systems Engineering graduate passionate about building
-    software, mobile apps, embedded systems, and real-world tech solutions.
+    Computer Systems Engineering graduate with hands-on experience in Flutter development,
+    embedded systems (ESP32 & sensors), and database systems. Passionate about building
+    scalable, real-world applications and solving practical problems through technology.
   </p>
 </section>
 
 <!-- SKILLS -->
-<section class="section dark reveal" id="skills">
-  <h2>Skills</h2>
+<section id="skills" class="section dark">
+  <h2>Technical Skills</h2>
 
-  <div class="skill">
-    <p>Flutter</p><div class="bar"><div style="width:90%"></div></div>
+  <div class="skills">
+    <span>Flutter</span>
+    <span>Dart</span>
+    <span>JavaScript</span>
+    <span>HTML</span>
+    <span>CSS</span>
+    <span>Firebase</span>
+    <span>ESP32</span>
+    <span>IoT Systems</span>
+    <span>Oracle APEX</span>
+    <span>Git & GitHub</span>
   </div>
-
-  <div class="skill">
-    <p>JavaScript</p><div class="bar"><div style="width:85%"></div></div>
-  </div>
-
-  <div class="skill">
-    <p>HTML / CSS</p><div class="bar"><div style="width:95%"></div></div>
-  </div>
-
-  <div class="skill">
-    <p>Firebase</p><div class="bar"><div style="width:80%"></div></div>
-  </div>
-
 </section>
 
 <!-- PROJECTS -->
-<section class="section reveal" id="projects">
+<section id="projects" class="section">
   <h2>Projects</h2>
 
   <div class="grid">
 
     <div class="card">
-      <h3>Smart Glove</h3>
-      <p>Sign language → speech using ESP32 + Flutter + sensors</p>
-      <span>IoT</span><span>AI</span>
+      <h3>Smart Speaking Signs Device</h3>
+      <p>
+        IoT-based smart glove converting sign language into speech and text using ESP32,
+        flex sensors, Flutter application, and Firebase integration.
+      </p>
     </div>
 
     <div class="card">
-      <h3>Food App</h3>
-      <p>Multi-page Flutter food ordering system UI</p>
-      <span>Flutter</span><span>UI</span>
+      <h3>Food Ordering Mobile App</h3>
+      <p>
+        Cross-platform Flutter application with multi-screen UI for browsing menu,
+        selecting items, and managing orders.
+      </p>
     </div>
 
     <div class="card">
-      <h3>APEX System</h3>
-      <p>Employee evaluation system with dashboards</p>
-      <span>Database</span><span>Oracle</span>
+      <h3>Employee Evaluation System</h3>
+      <p>
+        Oracle APEX-based system for managing employees, departments, and performance
+        evaluation with structured database design.
+      </p>
     </div>
 
   </div>
 </section>
 
 <!-- CONTACT -->
-<section class="section dark reveal" id="contact">
+<section id="contact" class="section dark">
   <h2>Contact</h2>
-  <p>📧 anwar@email.com</p>
-  <p>💼 LinkedIn | GitHub</p>
+
+  <p>Email: your.email@gmail.com</p>
+  <p>Phone: +970-XXXXXXXXX</p>
+
+  <div class="socials">
+    <a href="#">GitHub</a>
+    <a href="#">LinkedIn</a>
+  </div>
 </section>
 
 <footer>
-  <p>© 2026 Anwar. All rights reserved.</p>
+  <p>© 2026 Anwar Bshara. All Rights Reserved.</p>
 </footer>
 
-<script src="script.js"></script>
 </body>
 </html>
